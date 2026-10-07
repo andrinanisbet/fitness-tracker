@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: fitness-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: fitness_tracker
+      POSTGRES_USER: fitness_user
+      POSTGRES_PASSWORD: fitness_password
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - fitness_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  fitness_postgres_data:
