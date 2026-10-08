@@ -3,11 +3,11 @@
 ## About
 A full-stack fitness tracking application designed to record workouts, track training progress, and explore exercise data.
 
-This project is being developed as a learning and portfolio project, with a focus on building a real application using Java, Spring Boot, PostgreSQL and TypeScript.
+This project is being developed as a learning and portfolio project, with a focus on building a real application using Java, Spring Boot, PostgreSQL, TypeScript and React Native.
 
 **Status: Currently in development.**
 
----
+
 ## Goals
 The main goals of the project are to:
 
@@ -16,11 +16,12 @@ The main goals of the project are to:
 - Design and work with a relational database
 - Build a REST API
 - Practise automated testing
-- Develop a TypeScript frontend
+- Develop a TypeScript web dashboard 
+- Develop a React Native mobile app
 - Use Docker for local development
 - Learn how the different layers of a modern application fit together
 - Create a project that can be extended as new technologies and ideas are explored
----
+
 ## Planned Features
 
 ### Exercise Management
@@ -46,14 +47,24 @@ The main goals of the project are to:
 - Eventually provide visualisations of training progress
 
 ### Dashboard
-- A TypeScript-based frontend will eventually provide a dashboard for:
+A TypeScript-based frontend will eventually provide a dashboard for:
 - Creating and recording workouts
 - Viewing workout history
 - Exploring exercises
 - Viewing training statistics
 - Visualising progress
 
----
+### Mobile app
+- Mobile workout logging
+- Exercise search and selection
+- Record sets, reps, weight and workout duration
+- View workout history and training progress
+- View exercise and muscle information
+- Sync data with the Spring Boot REST API
+- Mobile-friendly progress and statistics
+- Offline workout logging with synchronisation when connectivity is restored
+- Push notifications and workout reminders
+
 ## Technology Stack
 
 ### Backend
@@ -73,12 +84,16 @@ The main goals of the project are to:
 - TypeScript
 - Planned dashboard framework: to be decided
 
+### Mobile
+- React Native (Planned)
+- TypeScript
+
 ### Development Tools
 - IntelliJ IDEA
 - Git
 - GitHub
-- Docker
----
+
+
 ## Architecture
 The planned architecture is:
 
@@ -96,7 +111,7 @@ flowchart LR
 
 The application will be developed incrementally, with each feature implemented, tested and committed to Git before moving onto the next stage.
 
----
+
 ## Project Roadmap
 
 ### Phase 1
@@ -139,11 +154,19 @@ The application will be developed incrementally, with each feature implemented, 
 - [ ] Progress dashboard
 - [ ] Training visualisations
 
----
+### Phase 6 - Mobile Application
+- [ ] Develop a mobile application using TypeScript and React Native
+- [ ] Connect the mobile application to the existing Spring Boot REST API
+- [ ] Reuse the existing PostgreSQL database and backend services
+- [ ] Implement mobile-friendly workout logging, exercise tracking and progress views
+- [ ] Explore mobile-specific features such as notifications and offline support
+- [ ] Test the API across both web and mobile clients
+
 ## Future Ideas
 
-### Phase 6 — Extensions
-- Potential future features include:
+### Extensions
+Potential future features include:
+- Mobile application
 - User accounts and authentication
 - External exercise API integration
 - MongoDB integration (where appropriate)
