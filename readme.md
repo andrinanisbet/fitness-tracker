@@ -166,7 +166,6 @@ The application will be developed incrementally, with each feature implemented, 
 
 ### Extensions
 Potential future features include:
-- Mobile application
 - User accounts and authentication
 - External exercise API integration
 - MongoDB integration (where appropriate)

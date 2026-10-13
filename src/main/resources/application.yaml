@@ -1,3 +1,12 @@
 spring:
   application:
     name: fitness-tracker
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fitness_tracker
+    username: fitness_user
+    password: fitness_password
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
