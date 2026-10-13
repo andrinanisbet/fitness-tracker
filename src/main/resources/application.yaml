@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/fitness_tracker
     username: fitness_user
-    password: fitness_password
+    password: ${DB_PASSWORD}
   jpa:
     database: POSTGRESQL
     show-sql: true
